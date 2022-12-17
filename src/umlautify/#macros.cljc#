@@ -1,0 +1,11 @@
+(ns umlautify.macros
+  #?(:cljs (:require-macros [umlautify.macros]))
+  )
+
+(defonce tags (atom {}))
+#?(:clj
+   (defmacro some-macro [name opts] nil)
+   )
+#?(:clj
+   (defmacro deftag [name opts] nil)
+   )

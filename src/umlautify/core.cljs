@@ -5,6 +5,7 @@
    [umlautify.events :as events]
    [umlautify.views :as views]
    [umlautify.config :as config]
+   [umlautify.tags :as tags]
    ))
 
 

@@ -1,0 +1,19 @@
+(ns umlautify.tags
+  (:require [clojure.set :as set]
+            [clojure.test :as test]
+            )
+  )
+(defn )
+
+
+(defn get-tags [form] (or (:tags (meta form)) #{}))
+(defn set-tags [form tags] (with-meta form {:tags tags}))
+
+
+(defn with-tags [form &  tags]
+  (with-meta form tags))
+
+
+(defmacro exploratory "marks that which it encloses, as exploratory code" [form]
+  form
+  )

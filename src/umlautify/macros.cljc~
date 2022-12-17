@@ -1,0 +1,7 @@
+(ns umlautify.macros)
+
+(defonce tags (atom {}))
+(defmacro deftag [name opts]
+  (defmacro name [] nil)
+  )
+(deftag potato {})
